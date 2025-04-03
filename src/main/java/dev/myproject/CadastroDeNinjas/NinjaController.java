@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController // lida com as requisições
 @RequestMapping // mapeia requisições
-public class Controller {
+public class NinjaController {
 
     @GetMapping("/boasvindas") // cria a rota e pega informacoes
     public String boasVindas() {
