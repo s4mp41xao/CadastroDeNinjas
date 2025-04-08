@@ -21,13 +21,13 @@ public class NinjaMapper {
 
         public NinjaDTO map(NinjaModel ninjaModel) {
             NinjaDTO ninjaDTO = new NinjaDTO();
-            ninjaModel.setId(ninjaModel.getId());
-            ninjaModel.setNome(ninjaModel.getNome());
-            ninjaModel.setEmail(ninjaModel.getEmail());
-            ninjaModel.setIdade(ninjaModel.getIdade());
-            ninjaModel.setImgUrl(ninjaModel.getImgUrl());
-            ninjaModel.setMissoes(ninjaModel.getMissoes());
-            ninjaModel.setRank(ninjaModel.getRank());
+            ninjaDTO.setId(ninjaModel.getId());
+            ninjaDTO.setNome(ninjaModel.getNome());
+            ninjaDTO.setEmail(ninjaModel.getEmail());
+            ninjaDTO.setIdade(ninjaModel.getIdade());
+            ninjaDTO.setImgUrl(ninjaModel.getImgUrl());
+            ninjaDTO.setMissoes(ninjaModel.getMissoes());
+            ninjaDTO.setRank(ninjaModel.getRank());
 
             return ninjaDTO;
         }
