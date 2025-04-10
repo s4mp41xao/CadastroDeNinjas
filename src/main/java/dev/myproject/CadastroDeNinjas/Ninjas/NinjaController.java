@@ -33,6 +33,7 @@ public class NinjaController {
     }
 
     // show all ninjas (READ)
+    @CrossOrigin(origins = "http://127.0.0.1:5173")
     @GetMapping("/listar")
     public ResponseEntity<List<NinjaDTO>> listarNinjas() {
         List<NinjaDTO> ninjas = ninjaService.listarNinjas();
