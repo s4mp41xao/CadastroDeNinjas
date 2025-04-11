@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController // lida com as requisições
 @RequestMapping("ninjas") // mapeia requisições
+@CrossOrigin(origins = "*")
 public class NinjaController {
 
     private NinjaService ninjaService;
@@ -33,7 +34,6 @@ public class NinjaController {
     }
 
     // show all ninjas (READ)
-    @CrossOrigin(origins = "http://localhost:5174")
     @GetMapping("/listar")
     public ResponseEntity<List<NinjaDTO>> listarNinjas() {
         List<NinjaDTO> ninjas = ninjaService.listarNinjas();
