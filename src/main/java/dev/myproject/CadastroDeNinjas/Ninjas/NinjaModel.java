@@ -35,6 +35,9 @@ public class NinjaModel {
     @Column(name = "idade")
     private int idade;
 
+    @Column(name = "description")
+    private String description;
+
     // defines that the ninja has a single mission in the table
     @ManyToOne
     // connect NinjaModel with MissoesModel
